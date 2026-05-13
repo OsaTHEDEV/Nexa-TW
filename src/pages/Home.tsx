@@ -41,7 +41,7 @@ export default function Home() {
               className="mt-6 max-w-2xl text-lg leading-8 text-[var(--color-muted)]"
             >
               {BRAND.name} is the home for our mobile products, product updates,
-              support contacts, privacy policies, and terms of use. Each app has a
+              support contacts, privacy policies, and terms of service. Each app has a
               dedicated page so users and App Store reviewers can quickly find the
               right information.
             </motion.p>
@@ -239,7 +239,7 @@ export default function Home() {
             </a>
             <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
               For app-specific help, each app page includes its own support route,
-              privacy policy, and terms of use.
+              privacy policy, and terms of service.
             </p>
           </div>
         </div>

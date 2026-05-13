@@ -24,11 +24,11 @@ export default function TermsOfUse() {
       <section className="mt-8 rounded-[2.25rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 sm:p-10">
         <div className="section-kicker">Terms</div>
         <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-          {app.name} terms of use
+          {app.name} terms of service
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-          These terms explain the basic conditions for using {app.name}, published
-          by {BRAND.name}.
+          These terms explain the basic conditions for using {app.name} and its
+          related services, published by {BRAND.name}.
         </p>
 
         <div className="legal-shell mt-10">

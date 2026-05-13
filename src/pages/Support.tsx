@@ -73,7 +73,7 @@ export default function Support() {
               </Link>
               <Link to={`/apps/${app.id}/terms`} className="utility-link">
                 <FileText size={16} />
-                Terms of use
+                Terms of service
               </Link>
               {hasStoreLink(app.appStoreUrl) ? (
                 <a

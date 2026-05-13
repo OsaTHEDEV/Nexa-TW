@@ -164,55 +164,241 @@ export const APPS_DATA: AppProfileData[] = [
     privacyPolicy: `
 # Privacy Policy for Echoless
 
-**Publisher:** Nexa TechWave  
-**Last Updated:** May 12, 2026
+**Last Updated:** May 2026
 
-Echoless is designed to help users reflect, organize priorities, and protect their attention. This privacy policy explains the current privacy expectations for the app and the support experience around it.
+Welcome to Echoless ("we," "our," or "us"). Your privacy matters to us, and we are committed to being transparent about the information we collect and how it is used.
 
-## Information We Collect
+This Privacy Policy explains how Echoless collects, uses, and protects information when you use our mobile application and related services.
 
-We intend to collect only the information reasonably needed to operate the app, maintain access, and respond to support requests.
+## 1. Information We Collect
 
-## How Information Is Used
+Echoless is designed to collect only the minimum amount of information necessary for the app to function.
 
-We use collected information to:
+We may collect the following categories of data:
 
-- provide the app's intended functionality
-- maintain account or purchase access if applicable
-- improve stability and reliability
-- respond to support requests
+### a) User Content
 
-## Launch Status
+Audio recordings or audio-related content you provide within the app.
 
-Because Echoless has not launched yet, some implementation details may change. This policy will be refined when the public release configuration is finalized.
+**Purpose:**
 
-## Data Requests
+- To provide core app functionality.
 
-For privacy questions or data-related requests, contact ${BRAND.supportEmail}.
+### b) Identifiers
+
+- Device ID
+- User ID generated internally by the app
+
+**Purpose:**
+
+- To maintain app functionality
+- To improve stability and prevent abuse
+- To support app-related operations
+
+### c) Financial Information
+
+Purchase-related information handled through Apple's in-app purchase system.
+
+**Purpose:**
+
+- To process subscriptions or purchases
+- To restore purchases
+
+**Important:**
+We do not directly collect or store your payment card details. Payments are securely processed by Apple.
+
+### d) Environment Scanning / Surroundings Data
+
+Limited device environment-related information necessary for app features.
+
+**Purpose:**
+
+- To support app functionality and technical operations.
+
+## 2. How We Use Information
+
+We use collected information only for:
+
+- Providing and maintaining app functionality
+- Improving app performance and reliability
+- Supporting purchases and subscriptions
+- Preventing misuse or abuse of the service
+- Complying with legal obligations
+
+We do not sell your personal information.
+
+## 3. Data Sharing
+
+We do not share your personal information with third parties except:
+
+- When required by law
+- To comply with legal processes
+- Through Apple services necessary for payments and app distribution
+- With trusted service providers that help operate the app
+
+## 4. Data Retention
+
+We retain information only for as long as necessary to:
+
+- Provide the service
+- Fulfill legal obligations
+- Resolve disputes
+- Enforce agreements
+
+Some information may be deleted automatically when no longer needed.
+
+## 5. Security
+
+We take reasonable technical and organizational measures to protect your information from:
+
+- Unauthorized access
+- Loss
+- Misuse
+- Disclosure
+
+However, no system can guarantee absolute security.
+
+## 6. Children's Privacy
+
+Echoless is not intended for children under 13 years old.
+
+We do not knowingly collect personal information from children. If we become aware that a child has provided personal information, we will delete it promptly.
+
+## 7. Your Rights
+
+Depending on your location, you may have rights to:
+
+- Access your information
+- Request deletion of your data
+- Object to certain processing
+- Request correction of inaccurate information
+
+You may contact us regarding privacy-related requests.
+
+## 8. Third-Party Services
+
+The app may rely on third-party services such as:
+
+- Apple App Store
+- Apple In-App Purchases
+- Hosting or analytics providers
+
+These services may collect information according to their own privacy policies.
+
+## 9. International Users
+
+Your information may be processed in countries other than your own. By using the app, you consent to such processing where permitted by law.
+
+## 10. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes become effective once posted.
+
+Continued use of the app after updates means you accept the revised policy.
+
+## 11. Contact Us
+
+If you have questions about this Privacy Policy, contact us at:
+
+${BRAND.email}
     `,
     termsOfUse: `
-# Terms of Use for Echoless
+# Terms of Service for Echoless
 
-**Publisher:** Nexa TechWave  
-**Last Updated:** May 12, 2026
+**Last Updated:** May 2026
 
-These terms describe the intended use of Echoless and this support website.
+These Terms of Service ("Terms") govern your access to and use of the Echoless mobile application and related services ("Service").
 
-## Use of the App
+By using Echoless, you agree to these Terms.
 
-You agree not to misuse the app, interfere with its normal operation, or attempt unauthorized access to related services.
+## 1. Eligibility
 
-## Availability
+You must be at least 13 years old to use the Service.
 
-Echoless may be changed, delayed, updated, or temporarily unavailable while launch preparations are completed.
+By using the app, you confirm that you meet this requirement.
 
-## Purchases
+## 2. Use of the Service
 
-If paid features or subscriptions are introduced, billing and cancellation will be handled through the relevant app marketplace.
+You agree to use Echoless only for lawful purposes.
 
-## Contact
+You may not:
 
-Questions about these terms can be sent to ${BRAND.email}.
+- Violate any laws or regulations
+- Attempt to interfere with app functionality
+- Reverse engineer or exploit the app
+- Upload harmful, abusive, or illegal content
+- Attempt unauthorized access to systems or users
+
+We reserve the right to suspend or terminate access for misuse.
+
+## 3. User Content
+
+You retain ownership of content you provide through the app.
+
+By using the Service, you grant us a limited license to process and store content solely for operating and improving the Service.
+
+You are responsible for ensuring you have rights to any content you upload or submit.
+
+## 4. Purchases and Subscriptions
+
+Some features may require payment or subscription.
+
+Payments are processed through Apple's App Store and are subject to Apple's terms and conditions.
+
+We do not directly handle payment card information.
+
+Subscriptions renew automatically unless canceled through your Apple account settings.
+
+## 5. Intellectual Property
+
+All app content, branding, logos, software, and related materials are owned by Echoless or its licensors and are protected by intellectual property laws.
+
+You may not copy, distribute, or reproduce any part of the Service without permission.
+
+## 6. Disclaimer
+
+The Service is provided "as is" and "as available."
+
+We do not guarantee:
+
+- Continuous availability
+- Error-free operation
+- Complete accuracy or reliability
+
+Use the Service at your own risk.
+
+## 7. Limitation of Liability
+
+To the maximum extent permitted by law, Echoless shall not be liable for:
+
+- Indirect damages
+- Loss of data
+- Loss of profits
+- Service interruptions
+- Device-related issues arising from app usage
+
+## 8. Termination
+
+We may suspend or terminate access to the Service at any time if:
+
+- These Terms are violated
+- Required by law
+- Necessary to protect the platform or users
+
+## 9. Changes to the Terms
+
+We may update these Terms periodically.
+
+Continued use of the Service after changes means you accept the updated Terms.
+
+## 10. Governing Law
+
+These Terms shall be governed by applicable laws and regulations in the jurisdiction where the Service operator is established, unless otherwise required by law.
+
+## 11. Contact
+
+For questions regarding these Terms, contact:
+
+${BRAND.email}
     `,
   },
   {
