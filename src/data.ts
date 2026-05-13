@@ -65,13 +65,13 @@ const echolessScreen4Url = new URL(
 ).href;
 
 export const BRAND = {
-  name: "Nexa TW",
+  name: "Nexa TechWave",
   domain: "nexa-tw.com",
   email: "info@nexa-tw.com",
   supportEmail: "support@nexa-tw.com",
   tagline: "Thoughtful mobile products for everyday routines.",
   description:
-    "Nexa TW publishes focused mobile apps designed to feel calm, clear, and genuinely useful.",
+    "Nexa TechWave publishes focused mobile apps designed to feel calm, clear, and genuinely useful.",
 };
 
 export const STUDIO_VALUES = [
@@ -96,11 +96,11 @@ export const APPS_DATA: AppProfileData[] = [
   {
     id: "echoless",
     name: "Echoless",
-    tagline: "Preparing for launch with a softer, quieter app experience.",
+    tagline: "Cut the noise. Keep the signal.",
     shortDescription:
-      "Publishing soon with the first real screenshots already in place.",
+      "A calm system for sorting distractions, protecting attention, and focusing on what matters.",
     description:
-      "Echoless is the next Nexa TW app heading toward release. This page is now wired to your real logo and screenshots so the website can start taking shape before the final App Store copy is ready. Once you send the final product text, support copy, and store link, we can swap the placeholder wording out quickly.",
+      "Modern life is full of noise: endless notifications, mental clutter, overthinking, and distractions pulling you in every direction. Echoless helps you step back, capture what is competing for your attention, and organize it with clarity so you can focus on what actually matters. With a simple tier-based system, visual distribution insights, and a clean distraction-free design, the app turns mental chaos into intentional action for founders, students, professionals, and anyone tired of being pushed to do more instead of doing better.",
     logoUrl: echolessLogoUrl,
     heroImage: echolessScreen4Url,
     screenshots: [
@@ -115,25 +115,25 @@ export const APPS_DATA: AppProfileData[] = [
     supportEmail: "support@nexa-tw.com",
     supportResponseTime: "Support replies usually arrive within 1-2 business days",
     supportIntro:
-      "Echoless is not publicly available just yet, but this support page is already live for launch preparation, early review needs, and upcoming store submission requirements.",
+      "Echoless is built for people who want less overwhelm, clearer priorities, and a more intentional way to manage attention.",
     supportFaq: [
       {
         id: "ec-faq-1",
-        question: "Is Echoless available to download yet?",
+        question: "What does Echoless help me do?",
         answer:
-          "Not yet. Echoless is currently in its pre-release phase. This page is live first so support, privacy, and legal information are already available when the app goes public.",
+          "Echoless helps you capture tasks, thoughts, and distractions in one place, then sort them so you can focus on what matters instead of reacting to everything at once.",
       },
       {
         id: "ec-faq-2",
-        question: "Why are there screenshots but no App Store button yet?",
+        question: "How does the A / B / C tier system work?",
         answer:
-          "The screenshots and branding are ready before the App Store listing is finalized. The store link will be added as soon as publication is confirmed.",
+          "Tier A is for essential priorities that deserve your full focus, Tier B is for meaningful but limited commitments, and Tier C is for low-value noise or distractions you want to reduce or remove.",
       },
       {
         id: "ec-faq-3",
-        question: "How can I contact Nexa TW about Echoless?",
+        question: "Who is Echoless built for?",
         answer:
-          "Use the support email on this page. If you are testing a pre-release build, include your device, iOS version, and a short note about what you need help with.",
+          "It is designed for people overwhelmed by distractions, overthinkers who want more structure, and founders, students, and professionals managing mental load.",
       },
     ],
     appStoreUrl: "",
@@ -141,33 +141,33 @@ export const APPS_DATA: AppProfileData[] = [
     features: [
       {
         id: "ec-feature-1",
-        title: "Real launch visuals",
+        title: "Noise Identification",
         description:
-          "The site now uses your actual Echoless logo and screenshots instead of generic sample imagery.",
+          "Quickly capture thoughts, tasks, distractions, and mental clutter so nothing stays vague in your head.",
         icon: Sparkles,
       },
       {
         id: "ec-feature-2",
-        title: "Launch-ready support pages",
+        title: "Tier-Based System (A / B / C)",
         description:
-          "Support, privacy, and terms pages are already in place so the publishing setup is easier to finish.",
+          "Sort each item into essential priorities, secondary commitments, or low-value noise to create an intentional structure.",
         icon: ShieldCheck,
       },
       {
         id: "ec-feature-3",
-        title: "Easy content swap later",
+        title: "Clarity Dashboard",
         description:
-          "When you send the final Echoless copy, we can replace this placeholder text without redoing the structure.",
+          "See how your time and attention are distributed so you can spot what is taking over your focus and adjust.",
         icon: TimerReset,
       },
     ],
     privacyPolicy: `
 # Privacy Policy for Echoless
 
-**Publisher:** Nexa TW  
+**Publisher:** Nexa TechWave  
 **Last Updated:** May 12, 2026
 
-Echoless is currently being prepared for release. This privacy policy is a pre-launch placeholder and will be updated with the app's final operational details before public distribution.
+Echoless is designed to help users reflect, organize priorities, and protect their attention. This privacy policy explains the current privacy expectations for the app and the support experience around it.
 
 ## Information We Collect
 
@@ -193,10 +193,10 @@ For privacy questions or data-related requests, contact ${BRAND.supportEmail}.
     termsOfUse: `
 # Terms of Use for Echoless
 
-**Publisher:** Nexa TW  
+**Publisher:** Nexa TechWave  
 **Last Updated:** May 12, 2026
 
-These terms are provided in advance of the public launch of Echoless and may be updated before the app becomes generally available.
+These terms describe the intended use of Echoless and this support website.
 
 ## Use of the App
 
@@ -218,7 +218,7 @@ Questions about these terms can be sent to ${BRAND.email}.
   {
     id: "coming-soon",
     name: "Coming Soon",
-    tagline: "Another Nexa TW app is already on the way.",
+    tagline: "Another Nexa TechWave app is already on the way.",
     shortDescription:
       "A placeholder page for the next product in the lineup.",
     description:
@@ -287,10 +287,10 @@ Questions about these terms can be sent to ${BRAND.email}.
     privacyPolicy: `
 # Privacy Policy for Coming Soon
 
-**Publisher:** Nexa TW  
+**Publisher:** Nexa TechWave  
 **Last Updated:** May 12, 2026
 
-This placeholder policy exists for a future Nexa TW app that has not yet been publicly released.
+This placeholder policy exists for a future Nexa TechWave app that has not yet been publicly released.
 
 ## Information We Collect
 
@@ -307,7 +307,7 @@ For privacy-related questions, contact ${BRAND.supportEmail}.
     termsOfUse: `
 # Terms of Use for Coming Soon
 
-**Publisher:** Nexa TW  
+**Publisher:** Nexa TechWave  
 **Last Updated:** May 12, 2026
 
 These placeholder terms will be replaced with the final app-specific terms before launch.

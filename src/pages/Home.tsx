@@ -22,7 +22,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)]"
             >
               <Sparkles size={14} />
-              Nexa TW Publisher Site
+              Nexa TechWave Publisher Site
             </motion.div>
 
             <motion.h1
@@ -118,7 +118,7 @@ export default function Home() {
       <section id="apps" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="section-heading">
           <div className="section-kicker">Apps</div>
-          <h2 className="section-title">Explore the current Nexa TW products</h2>
+          <h2 className="section-title">Explore the current Nexa TechWave products</h2>
           <p className="section-copy">
             Each app has a dedicated marketing page plus direct access to support,
             privacy, and terms.
