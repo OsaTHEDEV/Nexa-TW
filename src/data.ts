@@ -1,7 +1,7 @@
 import {
-  Compass,
-  FolderKanban,
-  Hourglass,
+  BookOpen,
+  Brain,
+  Languages,
   ShieldCheck,
   Sparkles,
   TimerReset,
@@ -402,13 +402,13 @@ ${BRAND.email}
     `,
   },
   {
-    id: "coming-soon",
-    name: "Coming Soon",
-    tagline: "Another Nexa TechWave app is already on the way.",
+    id: "tellitales",
+    name: "TelliTales",
+    tagline: "Personalized stories, narration, and playful learning for kids.",
     shortDescription:
-      "A placeholder page for the next product in the lineup.",
+      "An interactive storytelling app for ages 3-10 with custom characters, narration, and learning-focused play.",
     description:
-      "This listing holds the space for a second app that is not ready to be published yet. We can turn it into the real product page as soon as you give me the app name, text, and images.",
+      "TelliTales helps parents turn story time into a more personal, playful, and meaningful part of the day. Built for children ages 3-10, the app lets families create personalized stories with custom characters, beautiful illustrations, and narrated audio kids can follow along with. Parents can shape each story around a child's interests, favorite themes, learning goals, and even use an optional photo to make illustrations feel more personal. Beyond story time, TelliTales includes mini-games, quizzes, achievements, daily streaks, and AI-generated progress reports so reading, memory, and thinking skills can grow through fun, repeatable experiences.",
     logoUrl:
       "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=200&h=200&fit=crop&q=80",
     heroImage:
@@ -418,97 +418,334 @@ ${BRAND.email}
       "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=720&h=1440&fit=crop&q=80",
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=720&h=1440&fit=crop&q=80",
     ],
-    accent: "from-amber-400 via-orange-500 to-rose-500",
-    category: "Coming Soon",
+    accent: "from-sky-400 via-cyan-500 to-emerald-500",
+    category: "Kids Storytelling",
     platforms: ["iPhone"],
     supportEmail: "support@nexa-tw.com",
     supportResponseTime: "Usually within 2 business days",
     supportIntro:
-      "This placeholder page is here so the site can show the upcoming second app before its final name, assets, and store details are ready.",
+      "TelliTales is designed for parent-managed use, combining personalized stories, narrated reading, interactive questions, and learning-focused play in one family-friendly experience.",
     supportFaq: [
       {
-        id: "cs-faq-1",
-        question: "Why is this app listed as Coming Soon?",
+        id: "tt-faq-1",
+        question: "What age group is TelliTales built for?",
         answer:
-          "The product is not ready for public release yet, but we want the publisher site structure in place early.",
+          "TelliTales is built for children ages 3-10, with parent-managed tools and age-appropriate storytelling designed to keep the experience playful and kid-focused.",
       },
       {
-        id: "cs-faq-2",
-        question: "Can I download this app now?",
+        id: "tt-faq-2",
+        question: "How are stories personalized?",
         answer:
-          "Not yet. The download button stays disabled until the release is ready.",
+          "Parents can shape stories around a child's interests, favorite themes, and learning goals, and can optionally use a photo to make illustrations feel even more personal.",
       },
       {
-        id: "cs-faq-3",
-        question: "What do you need to turn this into the real app page?",
+        id: "tt-faq-3",
+        question: "What kinds of learning features are included?",
         answer:
-          "A final app name, short and long descriptions, feature list, support FAQ, privacy text, terms text, and any images you want shown on the website.",
+          "TelliTales includes narration, comprehension questions, story choices, mini-games, quizzes, achievements, daily streaks, and AI-generated progress reports to support reading, memory, and thinking skills.",
       },
     ],
     appStoreUrl: "",
     storeLabel: "Coming Soon",
     features: [
       {
-        id: "cs-feature-1",
-        title: "Reserved space",
+        id: "tt-feature-1",
+        title: "Personalized Story Creation",
         description:
-          "The site already has room for the next app instead of pretending only one product exists.",
-        icon: Compass,
+          "Create custom stories with child-inspired characters, favorite themes, learning goals, and optional photo-based personalization.",
+        icon: BookOpen,
       },
       {
-        id: "cs-feature-2",
-        title: "Flexible placeholder",
+        id: "tt-feature-2",
+        title: "Interactive Reading Experience",
         description:
-          "This card can be renamed and rewritten fast once you send the final content.",
-        icon: Hourglass,
+          "Children can listen to narration, follow illustrated scenes, answer comprehension questions, and make story choices that keep them engaged.",
+        icon: TimerReset,
       },
       {
-        id: "cs-feature-3",
-        title: "Launch-ready structure",
+        id: "tt-feature-3",
+        title: "Playful Learning Tools",
         description:
-          "Support, privacy, and terms routes are already available for the future app.",
-        icon: FolderKanban,
+          "Mini-games, quizzes, achievements, streaks, multilingual support, and parent progress reports extend learning beyond story time.",
+        icon: Brain,
+      },
+      {
+        id: "tt-feature-4",
+        title: "Parent Controls and Family Safety",
+        description:
+          "Use multiple child profiles, a PIN-secured parent area, saved story libraries, PDF exports, and reminders while keeping the experience parent-managed.",
+        icon: ShieldCheck,
+      },
+      {
+        id: "tt-feature-5",
+        title: "Multi-Language Access",
+        description:
+          "Switch between supported languages including English, Spanish, and Arabic so story time fits more families.",
+        icon: Languages,
       },
     ],
     privacyPolicy: `
-# Privacy Policy for Coming Soon
+# Privacy Policy for TelliTales
 
 **Publisher:** Nexa TechWave  
-**Last Updated:** May 12, 2026
+**Last Updated:** May 22, 2026
 
-This placeholder policy exists for a future Nexa TechWave app that has not yet been publicly released.
+## 1. Summary
 
-## Information We Collect
+TelliTales is a parent-managed application for children aged 3-10. Parents use it to generate personalized stories, illustrations, and learning activities with the help of artificial intelligence.
 
-The final data practices for this app have not yet been published.
+We combine on-device storage for local app data and offline use, secure cloud storage for parent accounts, child profiles, and saved progress, and trusted third-party AI providers for story and image generation. We do not sell personal information and we do not show ads. We share data with service providers only to operate the app.
 
-## Future Updates
+## 2. Information We Collect
 
-When the product is ready, this page will be updated with the actual privacy details and operational policies.
+We collect the following categories of information:
 
-## Contact
+Parent account data: email address, password stored only as a salted bcrypt hash, and an authentication session cookie.
 
-For privacy-related questions, contact ${BRAND.supportEmail}.
+Child profile data created by the parent: child's first name, age, and optional preferences such as gender of the story hero.
+
+Optional reference image: if you choose to add a photo of your child to make the illustrated character look like them.
+
+Content and usage data: story prompts you submit, AI-generated stories and illustrations, narration audio, game scores, achievements, daily streaks, and learning activity interactions.
+
+Subscription data: subscription status and purchase validation data, processed via RevenueCat and the Apple App Store or Google Play. We do not store your full payment card details.
+
+Communication data: your parent email address, used for account login and for sending optional progress reports.
+
+## 3. How We Use Information
+
+We use the data we collect to:
+
+- Generate personalized stories and educational content.
+- Create illustrations and narration using AI image and speech models.
+- Track your child's learning progress and game performance.
+- Provide subscription access and account management.
+- Send optional email progress reports to parents.
+- Diagnose problems and improve the reliability of the app.
+
+## 4. AI Processing and Data Sharing
+
+To deliver core functionality, the app sends limited information to third-party AI providers when you create a story.
+
+Data sent to AI services may include the story prompt, the child's first name and age, the optional reference image if you provided one, and the context needed to keep characters and scenes consistent.
+
+We currently use the following AI providers:
+
+- **Google Gemini**: text generation, image generation, vision processing for the optional reference photo, and primary text-to-speech narration.
+- **OpenAI**: used only as a fallback for text-to-speech narration when Gemini TTS is unavailable.
+
+These providers process the data only to generate the requested output. We configure providers to avoid using your data to train their general-purpose models, where supported by their enterprise or API terms.
+
+Reference photos, when provided, are sent to Google Gemini so it can extract a short text description of visual traits such as hair color, eye color, and clothing used to keep the illustrated character consistent across scenes. We do not use reference photos to train AI models.
+
+## 5. Third-Party Service Providers
+
+We rely on the following service providers to operate TelliTales:
+
+- Google (Gemini AI services): story text, illustrations, vision, and TTS.
+- OpenAI: TTS fallback only.
+- RevenueCat: subscription management.
+- SendGrid: delivery of optional email progress reports.
+- Our PostgreSQL database hosting provider: backend storage of accounts, child profiles, and saved content.
+- Apple App Store and Google Play: in-app purchase processing and platform notification infrastructure.
+
+These providers act as data processors and only handle the data necessary to perform their service.
+
+## 6. Data Storage
+
+We store data in two places:
+
+**Local device storage:** the app caches your data on the device for fast reads, offline use, and to keep the app responsive.
+
+**Cloud storage:** for parents who create an account, we store account credentials, child profiles, generated stories, game results, progress reports, daily streaks, and achievements in a secure PostgreSQL database. This data is associated with your parent account and is accessible only after authentication.
+
+If you use the app without creating an account in guest mode, no data leaves the device for storage purposes. Only AI generation requests are sent to our providers.
+
+## 7. Data Retention
+
+- Account and profile data are retained while your account is active.
+- Generated stories, progress reports, and game results are retained so you can revisit them and so AI reports can build on prior history.
+- AI request logs may be retained for a short period for debugging and abuse-prevention purposes.
+- Parents can delete their account and all associated data directly from within the app at any time.
+
+## 8. Data Deletion
+
+Parents can delete their account directly from the app, with no email required:
+
+1. Open the Parent Zone, scroll to the Account section, and tap Delete Account.
+2. After confirming the action, your account is deleted immediately and permanently.
+
+**What is deleted immediately:**
+
+- Your account credentials, including email and password hash.
+- All child profiles.
+- All saved stories, illustrations, and narration.
+- Game results, progress reports, daily streaks, and achievements.
+
+**What may be retained:**
+
+- Anonymized AI request logs may be kept for a short period for abuse-prevention and debugging.
+- Some minimal records may be retained where required by law or for security purposes.
+
+Uninstalling the app removes data stored on the device, but does not by itself delete cloud-stored account data. If you are unable to access the app, you may also request deletion by emailing ${BRAND.supportEmail}.
+
+## 9. Children's Privacy (COPPA)
+
+By creating a TelliTales account, you confirm that you are a parent or legal guardian of the child or children whose profiles you set up.
+
+TelliTales is intended to be set up and operated by a parent or legal guardian for use with their children aged 3-10. We follow COPPA principles by:
+
+- Requiring all account creation to be performed by a parent.
+- Not allowing direct child account registration.
+- Collecting child profile data only through a parent-controlled account.
+- Using child data solely to provide app functionality, including personalized stories and progress tracking.
+
+Parents may review, manage, or delete their child's data at any time from inside the app or by contacting us.
+
+## 10. AI Content Safety
+
+We apply automated filtering to story prompts and to AI-generated outputs in order to:
+
+- Block sexual, violent, hateful, or otherwise inappropriate prompts.
+- Prevent generation of unsafe or harmful content.
+- Keep outputs age-appropriate for children aged 3-10.
+
+No automated system is perfect. Parents are responsible for reviewing AI-generated stories, images, and reports before sharing them with their child.
+
+## 11. Notifications
+
+If you grant notification permission, TelliTales may send local notifications to remind you about reading streaks or to let you know a story is ready. Notifications are scheduled locally on the device using the operating system's notification scheduler. We do not register a push token with our servers and we do not send notifications to your device from the cloud.
+
+## 12. Security
+
+We use reasonable technical and organizational safeguards, including:
+
+- Encrypted communication between the app and our servers using HTTPS / TLS.
+- Salted password hashing with bcrypt for parent account credentials.
+- Authenticated, session-scoped access to cloud data.
+- Provider-managed encryption at rest for our database and storage.
+
+No system is 100% secure. We work continuously to improve our protections.
+
+## 13. Your Rights
+
+Depending on where you live, you may have rights to:
+
+- Access the personal information we hold about you.
+- Correct inaccurate information.
+- Request deletion of your account and associated data.
+- Withdraw consent for optional features such as email reports.
+
+To exercise any of these rights, email ${BRAND.supportEmail} from the address associated with your account.
+
+## 14. California Residents (CCPA)
+
+TelliTales does not "sell" personal information as that term is defined by the California Consumer Privacy Act (CCPA). We do not share personal information with third parties for cross-context behavioral advertising. California residents may exercise their CCPA access and deletion rights by emailing ${BRAND.supportEmail}. We will not discriminate against you for exercising these rights.
+
+## 15. EU / UK Residents (GDPR)
+
+If you are in the European Economic Area or the United Kingdom, the legal bases on which we process your data are:
+
+- **Performance of a contract**: to operate your account, deliver subscription benefits, and provide the core story-generation features you request.
+- **Legitimate interest**: to monitor for abuse, prevent fraud, and improve safety filtering.
+- **Consent**: for optional features such as email progress reports and notifications, which you can decline or withdraw at any time.
+
+Your data may be transferred to and processed by service providers located outside the EEA or UK. Where this happens, we rely on the standard safeguards offered by those providers, such as Standard Contractual Clauses, to protect your information.
+
+## 16. International Users
+
+TelliTales is operated using cloud infrastructure that may store and process data on servers located outside your country of residence, including in the United States. By using the app, you understand that your data may be processed in those locations under the safeguards described above.
+
+## 17. Changes to This Policy
+
+We may update this Privacy Policy from time to time. When we make material changes, we will bump the policy version inside the app and prompt you to review and accept the updated policy before continuing to use TelliTales.
+
+## 18. Contact
+
+For privacy-related questions, deletion requests, or to exercise any of the rights described above, contact us at:
+
+${BRAND.supportEmail}
     `,
     termsOfUse: `
-# Terms of Use for Coming Soon
+# Terms of Service for TelliTales
 
 **Publisher:** Nexa TechWave  
-**Last Updated:** May 12, 2026
+**Last Updated:** May 22, 2026
 
-These placeholder terms will be replaced with the final app-specific terms before launch.
+## 1. Acceptance of Terms
 
-## Availability
+By installing or using TelliTales, you agree to these Terms of Service. The app is intended for use by parents or legal guardians who manage the experience on behalf of their children. If you do not agree to these Terms, do not use TelliTales.
 
-This product is not currently available for public download.
+## 2. Acceptable Use
 
-## Changes
+You agree to use TelliTales only to:
 
-We may rename, redesign, delay, or replace this product during development.
+- Create educational or entertainment content for children in your care.
+- Supervise your child's interaction with the app.
 
-## Contact
+You agree not to:
 
-Questions about these terms can be sent to ${BRAND.email}.
+- Attempt to bypass the app's safety filters or content restrictions.
+- Submit prompts that contain sexual, hateful, violent, illegal, or otherwise harmful content.
+- Use the AI features for purposes other than generating age-appropriate content for children.
+- Resell, redistribute, scrape, reverse-engineer, or commercially exploit the app or its outputs.
+
+## 3. AI-Generated Content
+
+Stories, illustrations, narration, and progress reports are generated using artificial intelligence. We do not guarantee the accuracy, completeness, predictability, or educational value of any AI-generated output. Parents are responsible for reviewing AI-generated content before sharing it with their child. AI reports are informational only and do not constitute professional educational, psychological, or medical advice.
+
+## 4. Intellectual Property
+
+The TelliTales software, branding, design, and underlying code are owned by us. You retain ownership of the AI-generated stories and outputs created through TelliTales for your personal use. However, you may not commercially redistribute, resell, sublicense, or mass-publish TelliTales-generated content without our prior written permission.
+
+## 5. Subscriptions and Billing
+
+Some features of TelliTales require a paid subscription. Subscriptions are billed by the underlying platform, Apple App Store or Google Play, and managed in cooperation with RevenueCat.
+
+- Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period.
+- Payment is charged to your platform account at confirmation of purchase.
+- You can manage or cancel your subscription in your platform account settings, including App Store or Google Play. Refunds are subject to the platform's policies.
+- Per-period story quotas reset at the start of each billing cycle as described inside the app.
+
+## 6. Account Termination and Suspension
+
+You may close your account and request deletion of your data at any time by emailing ${BRAND.supportEmail}.
+
+We may suspend or terminate your access to TelliTales, with or without notice, if we reasonably believe that you have violated these Terms, for example by repeatedly attempting to bypass safety filters, submitting prohibited content, or abusing the AI generation system. We may also terminate accounts that have been inactive for an extended period.
+
+Upon termination, your right to use TelliTales ends immediately. Sections of these Terms that by their nature should survive termination, including Intellectual Property, Limitation of Liability, Governing Law, and Dispute Resolution, will survive.
+
+## 7. Service Availability
+
+We may modify, suspend, or discontinue all or portions of TelliTales at any time for maintenance, security, legal, or operational reasons. Where reasonable and practicable, we will give advance notice of significant changes through the app, by email, or on our website. We are not liable for any disruption, downtime, or loss resulting from such modifications, suspensions, or discontinuations.
+
+## 8. Limitation of Liability
+
+TelliTales is provided "as is" and "as available" without warranties of any kind, whether express or implied. To the fullest extent permitted by law, we are not liable for:
+
+- Decisions made on the basis of AI-generated stories or progress reports.
+- Any indirect, incidental, consequential, or punitive damages arising from your use of the app.
+- Service interruptions, data loss, or failures caused by underlying platform or third-party providers.
+
+Nothing in these Terms limits any liability that cannot be limited under applicable law.
+
+## 9. Governing Law
+
+These Terms are governed by the laws of the Hashemite Kingdom of Jordan, excluding its conflict-of-laws rules. This choice of governing law does not deprive you of any consumer protections you would have under the mandatory law of the country where you reside.
+
+## 10. Dispute Resolution
+
+Before starting any formal proceeding, you agree to first try to resolve any dispute with us informally by emailing ${BRAND.supportEmail} with a description of the issue. We will try in good faith to resolve the dispute within 60 days.
+
+If the dispute is not resolved informally, you and we agree that any remaining dispute will be resolved by binding individual arbitration on a non-class basis, except that:
+
+- Either party may bring an individual claim in small-claims court if it qualifies.
+- Either party may seek injunctive relief in court for misuse of intellectual property.
+- Nothing in this section waives any non-waivable rights you have as a consumer under the law of your country of residence.
+
+## 11. Changes to These Terms
+
+We may update these Terms from time to time. When we make material changes, we will bump the policy version inside the app and prompt you to review and accept the updated Terms before continuing to use TelliTales. Continued use of the app after the update constitutes acceptance of the revised Terms.
     `,
   },
 ];
