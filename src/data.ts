@@ -63,6 +63,10 @@ const echolessScreen4Url = new URL(
   "../assets/app-images/echoless-screen-4.png",
   import.meta.url,
 ).href;
+const telliTalesLogoUrl = new URL(
+  "../assets/app-images/tellitales-logo.png",
+  import.meta.url,
+).href;
 
 export const BRAND = {
   name: "Nexa TechWave",
@@ -409,8 +413,7 @@ ${BRAND.email}
       "An interactive storytelling app for ages 3-10 with custom characters, narration, and learning-focused play.",
     description:
       "TelliTales helps parents turn story time into a more personal, playful, and meaningful part of the day. Built for children ages 3-10, the app lets families create personalized stories with custom characters, beautiful illustrations, and narrated audio kids can follow along with. Parents can shape each story around a child's interests, favorite themes, learning goals, and even use an optional photo to make illustrations feel more personal. Beyond story time, TelliTales includes mini-games, quizzes, achievements, daily streaks, and AI-generated progress reports so reading, memory, and thinking skills can grow through fun, repeatable experiences.",
-    logoUrl:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=200&h=200&fit=crop&q=80",
+    logoUrl: telliTalesLogoUrl,
     heroImage:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&h=900&fit=crop&q=80",
     screenshots: [
