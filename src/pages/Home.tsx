@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { ArrowRight, ShieldCheck, LifeBuoy, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpenText,
+  ChevronRight,
+  Heart,
+  ShieldCheck,
+  Sparkles,
+  WandSparkles,
+} from "lucide-react";
 import { APPS_DATA, BRAND, STUDIO_VALUES } from "../data";
 
 function hasStoreLink(appStoreUrl: string) {
@@ -8,110 +16,148 @@ function hasStoreLink(appStoreUrl: string) {
 }
 
 export default function Home() {
+  const telliTales = APPS_DATA.find((app) => app.id === "tellitales");
+
   return (
     <div className="overflow-hidden">
-      <section className="relative">
+      <section className="hero-shell relative">
         <div className="hero-orb hero-orb-one" />
         <div className="hero-orb hero-orb-two" />
-        <div className="mx-auto grid max-w-7xl gap-16 px-4 py-20 sm:px-6 lg:grid-cols-[1.2fr,0.8fr] lg:px-8 lg:py-28">
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45 }}
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)]"
-            >
+        <div className="hero-spark hero-spark-one" />
+        <div className="hero-spark hero-spark-two" />
+        <div className="hero-spark hero-spark-three" />
+        <div className="mx-auto grid max-w-7xl gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr,0.95fr] lg:px-8 lg:py-28">
+          <div className="relative z-10">
+            <div className="hero-reveal inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
               <Sparkles size={14} />
-              Nexa TechWave Publisher Site
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.05 }}
-              className="mt-8 max-w-3xl font-display text-5xl font-semibold leading-[1.02] tracking-tight text-[var(--color-text)] sm:text-6xl lg:text-7xl"
-            >
-              Mobile apps with clear purpose, calm design, and public support pages that are easy to trust.
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.1 }}
-              className="mt-6 max-w-2xl text-lg leading-8 text-[var(--color-muted)]"
-            >
-              {BRAND.name} is the home for our mobile products, product updates,
-              support contacts, privacy policies, and terms of service. Each app has a
-              dedicated page so users and App Store reviewers can quickly find the
-              right information.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.15 }}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
-            >
-              <a
-                href="#apps"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[var(--color-brand-strong)]"
-              >
-                Explore Apps <ArrowRight size={16} />
-              </a>
-              <a
-                href={`mailto:${BRAND.supportEmail}`}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--color-border)] bg-white/70 px-6 py-3.5 text-sm font-semibold text-[var(--color-text)] transition hover:bg-white"
-              >
-                Contact Support <LifeBuoy size={16} />
-              </a>
-            </motion.div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 26 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.55, delay: 0.1 }}
-            className="glass-panel relative overflow-hidden rounded-[2rem] p-7"
-          >
-            <div className="mb-6 flex items-center justify-between">
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)]">
-                  Publisher Overview
-                </div>
-                <div className="mt-2 font-display text-2xl font-semibold">
-                  {BRAND.name}
-                </div>
-              </div>
-              <div className="rounded-full bg-[var(--color-brand-soft)] px-3 py-1 text-xs font-semibold text-[var(--color-brand)]">
-                {APPS_DATA.length} apps
-              </div>
+              TelliTales
             </div>
 
-            <div className="space-y-4">
-              {APPS_DATA.map((app) => (
-                <div
-                  key={app.id}
-                  className="rounded-[1.5rem] border border-[var(--color-border)] bg-white/75 p-4"
-                >
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={app.logoUrl}
-                      alt={`${app.name} logo`}
-                      className="h-14 w-14 rounded-2xl object-cover"
-                    />
-                    <div className="min-w-0">
-                      <div className="font-display text-lg font-semibold">
-                        {app.name}
+            <h1 className="hero-reveal hero-delay-1 mt-8 max-w-3xl font-display text-5xl font-semibold leading-[0.96] tracking-tight text-[var(--color-text)] sm:text-6xl lg:text-7xl">
+              Magical bedtime stories that feel personal, warm, and a little bit
+              dreamy.
+            </h1>
+
+            <p className="hero-reveal hero-delay-2 mt-6 max-w-2xl text-lg leading-8 text-[var(--color-soft)]">
+              Personalized adventures for children ages 3-10, with narrated
+              stories, playful learning, and gentle AI that helps parents turn
+              story time into a ritual kids ask for again and again.
+            </p>
+
+            <div className="hero-reveal hero-delay-3 mt-10 flex flex-col gap-4 sm:flex-row">
+              <Link
+                to="/apps/tellitales"
+                className="hero-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3.5 text-sm font-semibold text-[var(--color-bg)] transition"
+              >
+                Explore TelliTales <ArrowRight size={16} />
+              </Link>
+              <a
+                href={`mailto:${BRAND.supportEmail}`}
+                className="hero-button hero-button--ghost inline-flex items-center justify-center gap-2 rounded-full border border-white/14 bg-white/6 px-6 py-3.5 text-sm font-semibold text-[var(--color-text)] transition"
+              >
+                Talk to Support <WandSparkles size={16} />
+              </a>
+            </div>
+
+            <div className="hero-reveal hero-delay-4 mt-10 flex flex-wrap gap-3 text-sm text-[var(--color-soft)]">
+              <span className="rounded-full border border-white/10 bg-white/6 px-4 py-2">
+                Narrated story chapters
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/6 px-4 py-2">
+                Parent-managed experience
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/6 px-4 py-2">
+                Gentle learning moments
+              </span>
+            </div>
+          </div>
+
+          <div className="hero-reveal hero-delay-2 relative z-10 flex justify-center lg:justify-end">
+            <div className="phone-mockup">
+              <div className="phone-mockup__shine" />
+              <div className="phone-mockup__topbar">
+                <span className="phone-pill" />
+                <span className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
+                  TelliTales
+                </span>
+                <span className="phone-pill phone-pill--soft" />
+              </div>
+
+              <div className="phone-screen">
+                <div className="phone-screen__hero">
+                  <div className="phone-screen__orb phone-screen__orb--gold" />
+                  <div className="phone-screen__orb phone-screen__orb--cream" />
+                  <div className="phone-screen__header">
+                    {telliTales ? (
+                      <img
+                        src={telliTales.logoUrl}
+                        alt="TelliTales logo"
+                        className="h-14 w-14 rounded-2xl object-cover shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
+                      />
+                    ) : null}
+                    <div>
+                      <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
+                        Tonight&apos;s story
                       </div>
-                      <div className="text-sm text-[var(--color-muted)]">
-                        {app.shortDescription}
+                      <div className="mt-1 font-display text-2xl font-semibold text-[var(--color-text)]">
+                        The Moonlit Lantern
                       </div>
                     </div>
                   </div>
+
+                  <div className="phone-cover">
+                    <div className="phone-cover__moon" />
+                    <div className="phone-cover__stars">
+                      <Sparkles size={14} />
+                      <Sparkles size={12} />
+                      <Sparkles size={10} />
+                    </div>
+                    <div className="phone-cover__cloud phone-cover__cloud--left" />
+                    <div className="phone-cover__cloud phone-cover__cloud--right" />
+                  </div>
                 </div>
-              ))}
+
+                <div className="phone-card">
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
+                        Listen again
+                      </div>
+                      <div className="mt-2 font-display text-xl font-semibold text-[var(--color-text)]">
+                        A fox, a lantern, and a forest full of stars
+                      </div>
+                    </div>
+                    <div className="rounded-full border border-white/12 bg-[rgba(255,255,255,0.06)] p-3 text-[var(--color-brand)]">
+                      <BookOpenText size={18} />
+                    </div>
+                  </div>
+
+                  <div className="mt-5 h-1.5 rounded-full bg-white/10">
+                    <div className="h-full w-2/3 rounded-full bg-[linear-gradient(90deg,var(--color-brand),#fff1bf)]" />
+                  </div>
+
+                  <div className="mt-5 flex items-center justify-between text-sm text-[var(--color-soft)]">
+                    <span className="inline-flex items-center gap-2">
+                      <Heart size={14} />
+                      Narrated bedtime
+                    </span>
+                    <span>3 min left</span>
+                  </div>
+                </div>
+
+                <div className="phone-actions">
+                  <div className="phone-action">
+                    <WandSparkles size={16} />
+                    Make it personal
+                  </div>
+                  <div className="phone-action phone-action--gold">
+                    Continue story
+                    <ChevronRight size={16} />
+                  </div>
+                </div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -182,12 +228,12 @@ export default function Home() {
                       href={app.appStoreUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-semibold text-[var(--color-text)] transition hover:bg-[var(--color-brand)] hover:text-white"
+                      className="rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-semibold text-[var(--color-text)] transition hover:bg-[var(--color-brand)] hover:text-[var(--color-bg)]"
                     >
                       {app.storeLabel}
                     </a>
                   ) : (
-                    <span className="rounded-full border border-[var(--color-border)] bg-white/70 px-4 py-2 text-sm font-semibold text-[var(--color-muted)]">
+                    <span className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-sm font-semibold text-[var(--color-muted)]">
                       {app.storeLabel}
                     </span>
                   )}
@@ -227,7 +273,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-[1.5rem] bg-white/80 p-6">
+          <div className="rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)]">
               General contact
             </div>

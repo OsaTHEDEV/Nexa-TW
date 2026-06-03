@@ -20,17 +20,17 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
-      <header className="sticky top-0 z-50 border-b border-white/50 bg-[rgba(248,246,239,0.88)] backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[rgba(9,12,29,0.72)] backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[var(--color-brand)] text-white shadow-[0_12px_30px_rgba(9,53,64,0.18)]">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[var(--color-brand)] text-[var(--color-bg)] shadow-[0_12px_30px_rgba(9,53,64,0.18)]">
               <AppWindow size={18} />
             </div>
             <div>
               <div className="font-display text-lg font-semibold tracking-tight">
                 {BRAND.name}
               </div>
-              <div className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+              <div className="text-xs uppercase tracking-[0.22em] text-[var(--color-soft)]">
                 App Publisher
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Layout() {
                 <a
                   key={item.label}
                   href={item.href.slice(1)}
-                  className="text-sm font-medium text-[var(--color-muted)] transition hover:text-[var(--color-text)]"
+                  className="text-sm font-medium text-[var(--color-soft)] transition hover:text-[var(--color-text)]"
                 >
                   {item.label}
                 </a>
@@ -50,7 +50,7 @@ export default function Layout() {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-sm font-medium text-[var(--color-muted)] transition hover:text-[var(--color-text)]"
+                  className="text-sm font-medium text-[var(--color-soft)] transition hover:text-[var(--color-text)]"
                 >
                   {item.label}
                 </Link>
@@ -59,7 +59,7 @@ export default function Layout() {
 
             <a
               href={`mailto:${BRAND.supportEmail}`}
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-brand)] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[var(--color-brand-strong)]"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-brand)] px-5 py-2.5 text-sm font-semibold text-[var(--color-bg)] transition hover:bg-[var(--color-brand-strong)]"
             >
               Contact Support <ArrowUpRight size={16} />
             </a>
@@ -68,7 +68,7 @@ export default function Layout() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen((open) => !open)}
-            className="inline-flex rounded-full border border-[var(--color-border)] bg-white p-2 text-[var(--color-text)] md:hidden"
+            className="inline-flex rounded-full border border-[var(--color-border)] bg-[rgba(255,255,255,0.06)] p-2 text-[var(--color-text)] md:hidden"
             aria-label="Toggle navigation"
           >
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -76,7 +76,7 @@ export default function Layout() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="border-t border-[var(--color-border)] bg-[var(--color-surface)] md:hidden">
+          <div className="border-t border-[var(--color-border)] bg-[rgba(9,12,29,0.92)] md:hidden">
             <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6">
               {navigation.map((item) =>
                 item.type === "anchor" && isHome ? (
@@ -100,7 +100,7 @@ export default function Layout() {
 
               <a
                 href={`mailto:${BRAND.supportEmail}`}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--color-brand)] px-4 py-3 text-sm font-semibold text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--color-brand)] px-4 py-3 text-sm font-semibold text-[var(--color-bg)]"
               >
                 Contact Support <ArrowUpRight size={16} />
               </a>
@@ -113,7 +113,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface)]">
+      <footer className="border-t border-[var(--color-border)] bg-[rgba(9,12,29,0.72)]">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[1.4fr,1fr,1fr] lg:px-8">
           <div className="max-w-md">
             <div className="mb-4 font-display text-2xl font-semibold tracking-tight">

@@ -126,7 +126,7 @@ export default function AppProfile() {
               </div>
             </div>
 
-            <div className="mt-10 rounded-[2rem] border border-[var(--color-border)] bg-white/70 p-8">
+            <div className="mt-10 rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
               <div className="section-kicker">Overview</div>
               <h2 className="mt-3 font-display text-3xl font-semibold">
                 Built and published by {BRAND.name}
@@ -227,18 +227,18 @@ export default function AppProfile() {
                   href={app.appStoreUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[var(--color-brand-strong)]"
+                  className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-5 py-3.5 text-sm font-semibold text-[var(--color-bg)] transition hover:bg-[var(--color-brand-strong)]"
                 >
                   {app.storeLabel} <ArrowUpRight size={16} />
                 </a>
               ) : (
-                <div className="mt-7 inline-flex w-full items-center justify-center rounded-full bg-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-600">
+                <div className="mt-7 inline-flex w-full items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] px-5 py-3.5 text-sm font-semibold text-[var(--color-soft)]">
                   {app.storeLabel}
                 </div>
               )}
             </div>
 
-            <div className="rounded-[2rem] border border-[var(--color-border)] bg-white/70 p-7">
+            <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-7">
               <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-muted)]">
                 Important links
               </div>

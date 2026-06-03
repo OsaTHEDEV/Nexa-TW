@@ -34,7 +34,7 @@ export default function Support() {
         </p>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-[0.95fr,1.05fr]">
-          <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-white/80 p-6">
+          <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="inline-flex rounded-2xl bg-[var(--color-brand-soft)] p-3 text-[var(--color-brand)]">
               <Mail size={18} />
             </div>
@@ -62,7 +62,7 @@ export default function Support() {
             </p>
           </div>
 
-          <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-white/80 p-6">
+          <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-muted)]">
               Helpful links
             </div>
@@ -105,7 +105,7 @@ export default function Support() {
           {app.supportFaq.map((item) => (
             <div
               key={item.id}
-              className="rounded-[1.5rem] border border-[var(--color-border)] bg-white/70 p-6"
+            className="rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
             >
               <h3 className="font-display text-xl font-semibold">{item.question}</h3>
               <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
