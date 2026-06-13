@@ -67,6 +67,26 @@ const telliTalesLogoUrl = new URL(
   "../assets/app-images/tellitales-logo.png",
   import.meta.url,
 ).href;
+const telliTalesLaunchpad1Url = new URL(
+  "../assets/app-images/tellitales-launchpad-01.png",
+  import.meta.url,
+).href;
+const telliTalesLaunchpad2Url = new URL(
+  "../assets/app-images/tellitales-launchpad-02.png",
+  import.meta.url,
+).href;
+const telliTalesLaunchpad3Url = new URL(
+  "../assets/app-images/tellitales-launchpad-03.png",
+  import.meta.url,
+).href;
+const telliTalesLaunchpad4Url = new URL(
+  "../assets/app-images/tellitales-launchpad-04.png",
+  import.meta.url,
+).href;
+const telliTalesLaunchpad5Url = new URL(
+  "../assets/app-images/tellitales-launchpad-05.png",
+  import.meta.url,
+).href;
 
 export const BRAND = {
   name: "Nexa TechWave",
@@ -414,12 +434,13 @@ ${BRAND.email}
     description:
       "TelliTales helps parents turn story time into a more personal, playful, and meaningful part of the day. Built for children ages 3-10, the app lets families create personalized stories with custom characters, beautiful illustrations, and narrated audio kids can follow along with. Parents can shape each story around a child's interests, favorite themes, learning goals, and even use an optional photo to make illustrations feel more personal. Beyond story time, TelliTales includes mini-games, quizzes, achievements, daily streaks, and AI-generated progress reports so reading, memory, and thinking skills can grow through fun, repeatable experiences.",
     logoUrl: telliTalesLogoUrl,
-    heroImage:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&h=900&fit=crop&q=80",
+    heroImage: telliTalesLaunchpad1Url,
     screenshots: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=720&h=1440&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=720&h=1440&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=720&h=1440&fit=crop&q=80",
+      telliTalesLaunchpad1Url,
+      telliTalesLaunchpad2Url,
+      telliTalesLaunchpad3Url,
+      telliTalesLaunchpad4Url,
+      telliTalesLaunchpad5Url,
     ],
     accent: "from-sky-400 via-cyan-500 to-emerald-500",
     category: "Kids Storytelling",
