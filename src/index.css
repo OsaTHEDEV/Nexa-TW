@@ -149,6 +149,87 @@ a {
   animation: floaty 7s ease-in-out infinite;
 }
 
+.hero-preview-shell {
+  position: relative;
+  width: min(100%, 28rem);
+  animation: floaty 7s ease-in-out infinite;
+}
+
+.hero-preview-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: -1.5rem;
+  border-radius: 3rem;
+  background:
+    radial-gradient(circle at 50% 15%, rgba(123, 124, 255, 0.28), transparent 42%),
+    radial-gradient(circle at 20% 80%, rgba(244, 203, 125, 0.2), transparent 30%);
+  filter: blur(34px);
+  opacity: 0.85;
+}
+
+.hero-preview {
+  position: relative;
+  border-radius: 2.6rem;
+  border: 1px solid rgba(255, 241, 197, 0.16);
+  background: linear-gradient(180deg, rgba(17, 23, 55, 0.95), rgba(10, 13, 30, 0.98));
+  padding: 1rem;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.4);
+}
+
+.hero-preview__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0.35rem 0.95rem;
+}
+
+.hero-preview__pill {
+  height: 0.5rem;
+  width: 2rem;
+  border-radius: 9999px;
+  background: rgba(255, 241, 197, 0.65);
+}
+
+.hero-preview__pill--soft {
+  width: 1.2rem;
+  background: rgba(255, 241, 197, 0.24);
+}
+
+.hero-preview__frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 241, 197, 0.12);
+  background: #050816;
+}
+
+.hero-preview__image {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  object-fit: contain;
+  background: #050816;
+}
+
+.hero-preview__badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(5, 8, 22, 0.72);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+}
+
 .phone-mockup__shine {
   pointer-events: none;
   position: absolute;

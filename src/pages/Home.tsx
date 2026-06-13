@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import {
   ArrowRight,
-  BookOpenText,
-  ChevronRight,
-  Heart,
   ShieldCheck,
   Sparkles,
   WandSparkles,
@@ -17,6 +14,8 @@ function hasStoreLink(appStoreUrl: string) {
 
 export default function Home() {
   const telliTales = APPS_DATA.find((app) => app.id === "tellitales");
+  const telliTalesHeroImage =
+    telliTales?.screenshots[1] ?? telliTales?.heroImage;
 
   return (
     <div className="overflow-hidden">
@@ -73,86 +72,28 @@ export default function Home() {
           </div>
 
           <div className="hero-reveal hero-delay-2 relative z-10 flex justify-center lg:justify-end">
-            <div className="phone-mockup">
-              <div className="phone-mockup__shine" />
-              <div className="phone-mockup__topbar">
-                <span className="phone-pill" />
-                <span className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
-                  TelliTales
-                </span>
-                <span className="phone-pill phone-pill--soft" />
-              </div>
-
-              <div className="phone-screen">
-                <div className="phone-screen__hero">
-                  <div className="phone-screen__orb phone-screen__orb--gold" />
-                  <div className="phone-screen__orb phone-screen__orb--cream" />
-                  <div className="phone-screen__header">
-                    {telliTales ? (
-                      <img
-                        src={telliTales.logoUrl}
-                        alt="TelliTales logo"
-                        className="h-14 w-14 rounded-2xl object-cover shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
-                      />
-                    ) : null}
-                    <div>
-                      <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
-                        Tonight&apos;s story
-                      </div>
-                      <div className="mt-1 font-display text-2xl font-semibold text-[var(--color-text)]">
-                        The Moonlit Lantern
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="phone-cover">
-                    <div className="phone-cover__moon" />
-                    <div className="phone-cover__stars">
-                      <Sparkles size={14} />
-                      <Sparkles size={12} />
-                      <Sparkles size={10} />
-                    </div>
-                    <div className="phone-cover__cloud phone-cover__cloud--left" />
-                    <div className="phone-cover__cloud phone-cover__cloud--right" />
-                  </div>
+            <div className="hero-preview-shell">
+              <div className="hero-preview-glow" />
+              <div className="hero-preview">
+                <div className="hero-preview__topbar">
+                  <span className="hero-preview__pill" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/85">
+                    TelliTales app preview
+                  </span>
+                  <span className="hero-preview__pill hero-preview__pill--soft" />
                 </div>
 
-                <div className="phone-card">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
-                        Listen again
-                      </div>
-                      <div className="mt-2 font-display text-xl font-semibold text-[var(--color-text)]">
-                        A fox, a lantern, and a forest full of stars
-                      </div>
-                    </div>
-                    <div className="rounded-full border border-white/12 bg-[rgba(255,255,255,0.06)] p-3 text-[var(--color-brand)]">
-                      <BookOpenText size={18} />
-                    </div>
-                  </div>
-
-                  <div className="mt-5 h-1.5 rounded-full bg-white/10">
-                    <div className="h-full w-2/3 rounded-full bg-[linear-gradient(90deg,var(--color-brand),#fff1bf)]" />
-                  </div>
-
-                  <div className="mt-5 flex items-center justify-between text-sm text-[var(--color-soft)]">
-                    <span className="inline-flex items-center gap-2">
-                      <Heart size={14} />
-                      Narrated bedtime
-                    </span>
-                    <span>3 min left</span>
-                  </div>
-                </div>
-
-                <div className="phone-actions">
-                  <div className="phone-action">
-                    <WandSparkles size={16} />
-                    Make it personal
-                  </div>
-                  <div className="phone-action phone-action--gold">
-                    Continue story
-                    <ChevronRight size={16} />
+                <div className="hero-preview__frame">
+                  {telliTalesHeroImage ? (
+                    <img
+                      src={telliTalesHeroImage}
+                      alt="TelliTales app preview"
+                      className="hero-preview__image"
+                    />
+                  ) : null}
+                  <div className="hero-preview__badge">
+                    <Sparkles size={14} />
+                    Screenshot 2
                   </div>
                 </div>
               </div>
