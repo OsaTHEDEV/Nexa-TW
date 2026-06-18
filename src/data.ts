@@ -469,8 +469,8 @@ ${BRAND.email}
           "TelliTales includes narration, comprehension questions, story choices, mini-games, quizzes, achievements, daily streaks, and AI-generated progress reports to support reading, memory, and thinking skills.",
       },
     ],
-    appStoreUrl: "",
-    storeLabel: "Coming Soon",
+    appStoreUrl: "https://apps.apple.com/dz/app/tellitales/id6770322880",
+    storeLabel: "View on the App Store",
     features: [
       {
         id: "tt-feature-1",
@@ -773,3 +773,15 @@ We may update these Terms from time to time. When we make material changes, we w
     `,
   },
 ];
+
+export const DISPLAY_APPS_DATA = [...APPS_DATA].sort((left, right) => {
+  if (left.id === "tellitales") {
+    return -1;
+  }
+
+  if (right.id === "tellitales") {
+    return 1;
+  }
+
+  return 0;
+});

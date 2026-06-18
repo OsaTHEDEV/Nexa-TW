@@ -1,7 +1,7 @@
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight, AppWindow } from "lucide-react";
 import { useEffect, useState } from "react";
-import { APPS_DATA, BRAND } from "../data";
+import { APPS_DATA, BRAND, DISPLAY_APPS_DATA } from "../data";
 
 const navigation = [
   { label: "Apps", href: "/#apps", type: "anchor" as const },
@@ -137,7 +137,7 @@ export default function Layout() {
               Apps
             </div>
             <div className="flex flex-col gap-3">
-              {APPS_DATA.map((app) => (
+              {DISPLAY_APPS_DATA.map((app) => (
                 <NavLink
                   key={app.id}
                   to={`/apps/${app.id}`}

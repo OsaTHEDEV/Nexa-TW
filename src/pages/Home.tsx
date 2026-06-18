@@ -6,7 +6,7 @@ import {
   Sparkles,
   WandSparkles,
 } from "lucide-react";
-import { APPS_DATA, BRAND, STUDIO_VALUES } from "../data";
+import { APPS_DATA, BRAND, DISPLAY_APPS_DATA, STUDIO_VALUES } from "../data";
 
 function hasStoreLink(appStoreUrl: string) {
   return appStoreUrl.trim().length > 0;
@@ -14,6 +14,7 @@ function hasStoreLink(appStoreUrl: string) {
 
 export default function Home() {
   const telliTales = APPS_DATA.find((app) => app.id === "tellitales");
+  const featuredApps = DISPLAY_APPS_DATA;
   const telliTalesHeroImage =
     telliTales?.screenshots[1] ?? telliTales?.heroImage;
 
@@ -44,18 +45,29 @@ export default function Home() {
             </p>
 
             <div className="hero-reveal hero-delay-3 mt-10 flex flex-col gap-4 sm:flex-row">
+              {telliTales?.appStoreUrl ? (
+                <a
+                  href={telliTales.appStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3.5 text-sm font-semibold text-[var(--color-bg)] transition"
+                >
+                  Download on the App Store <ArrowRight size={16} />
+                </a>
+              ) : (
+                <Link
+                  to="/apps/tellitales"
+                  className="hero-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3.5 text-sm font-semibold text-[var(--color-bg)] transition"
+                >
+                  Explore TelliTales <ArrowRight size={16} />
+                </Link>
+              )}
               <Link
                 to="/apps/tellitales"
-                className="hero-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3.5 text-sm font-semibold text-[var(--color-bg)] transition"
-              >
-                Explore TelliTales <ArrowRight size={16} />
-              </Link>
-              <a
-                href={`mailto:${BRAND.supportEmail}`}
                 className="hero-button hero-button--ghost inline-flex items-center justify-center gap-2 rounded-full border border-white/14 bg-white/6 px-6 py-3.5 text-sm font-semibold text-[var(--color-text)] transition"
               >
-                Talk to Support <WandSparkles size={16} />
-              </a>
+                View app page <WandSparkles size={16} />
+              </Link>
             </div>
 
             <div className="hero-reveal hero-delay-4 mt-10 flex flex-wrap gap-3 text-sm text-[var(--color-soft)]">
@@ -113,7 +125,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
-          {APPS_DATA.map((app, index) => (
+          {featuredApps.map((app, index) => (
             <motion.article
               key={app.id}
               initial={{ opacity: 0, y: 24 }}
