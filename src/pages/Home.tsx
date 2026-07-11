@@ -114,7 +114,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="apps" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section
+         id="apps"
+         className="scroll-mt-28 mx-auto max-w-7xl px-4 py-8 sm:scroll-mt-32 sm:px-6 lg:px-8">
         <div className="section-heading">
           <div className="section-kicker">Apps</div>
           <h2 className="section-title">Explore the current Nexa TechWave products</h2>
@@ -213,7 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="support" className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+      <section id="support" className="scroll-mt-28 mx-auto max-w-7xl px-4 pb-24 sm:scroll-mt-32 sm:px-6 lg:px-8">
         <div className="support-banner">
           <div>
             <div className="section-kicker">Support</div>
