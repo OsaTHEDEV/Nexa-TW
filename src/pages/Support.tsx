@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
-import { ArrowLeft, Mail, Shield, FileText } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Mail, Shield, FileText } from "lucide-react";
 import { APPS_DATA, BRAND } from "../data";
 
 function hasStoreLink(appStoreUrl: string) {
@@ -82,7 +82,7 @@ export default function Support() {
                   rel="noreferrer"
                   className="utility-link"
                 >
-                  <Mail size={16} />
+                  <ArrowUpRight size={16} />
                   Open App Store page
                 </a>
               ) : (
