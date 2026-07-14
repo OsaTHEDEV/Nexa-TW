@@ -26,7 +26,7 @@ export default function Home() {
         <div className="hero-spark hero-spark-one" />
         <div className="hero-spark hero-spark-two" />
         <div className="hero-spark hero-spark-three" />
-        <div className="mx-auto grid max-w-7xl gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr,0.95fr] lg:px-8 lg:py-28">
+        <div className="hero-grid mx-auto grid max-w-7xl gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr,0.95fr] lg:px-8 lg:py-28">
           <div className="relative z-10">
             <div className="hero-reveal inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
               <Sparkles size={14} />
@@ -114,9 +114,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-         id="apps"
-         className="scroll-mt-28 mx-auto max-w-7xl px-4 py-8 sm:scroll-mt-32 sm:px-6 lg:px-8">
+      <section id="apps" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="section-heading">
           <div className="section-kicker">Apps</div>
           <h2 className="section-title">Explore the current Nexa TechWave products</h2>
@@ -126,7 +124,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featuredApps.map((app, index) => (
             <motion.article
               key={app.id}
@@ -201,8 +199,15 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-3">
-          {STUDIO_VALUES.map((value) => (
-            <div key={value.title} className="feature-panel">
+          {STUDIO_VALUES.map((value, index) => (
+            <motion.div
+              key={value.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="feature-panel"
+            >
               <div className="mb-4 inline-flex rounded-2xl bg-[var(--color-brand-soft)] p-3 text-[var(--color-brand)]">
                 <ShieldCheck size={20} />
               </div>
@@ -210,13 +215,19 @@ export default function Home() {
               <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
                 {value.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      <section id="support" className="scroll-mt-28 mx-auto max-w-7xl px-4 pb-24 sm:scroll-mt-32 sm:px-6 lg:px-8">
-        <div className="support-banner">
+      <section id="support" className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.55 }}
+          className="support-banner"
+        >
           <div>
             <div className="section-kicker">Support</div>
             <h2 className="section-title mt-3">
@@ -243,7 +254,7 @@ export default function Home() {
               privacy policy, and terms of service.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
