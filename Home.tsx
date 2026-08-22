@@ -21,10 +21,11 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <section className="hero-shell relative">
-        <div className="hero-moon" aria-hidden="true" />
-        <span className="hero-star hero-star-a" aria-hidden="true" />
-        <span className="hero-star hero-star-b" aria-hidden="true" />
-        <span className="hero-star hero-star-c" aria-hidden="true" />
+        <div className="hero-orb hero-orb-one" />
+        <div className="hero-orb hero-orb-two" />
+        <div className="hero-spark hero-spark-one" />
+        <div className="hero-spark hero-spark-two" />
+        <div className="hero-spark hero-spark-three" />
         <div className="hero-grid mx-auto grid max-w-7xl gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr,0.95fr] lg:px-8 lg:py-28">
           <div className="relative z-10">
             <div className="hero-reveal inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-soft)]">
@@ -33,8 +34,8 @@ export default function Home() {
             </div>
 
             <h1 className="hero-reveal hero-delay-1 mt-8 max-w-3xl font-display text-5xl font-semibold leading-[0.96] tracking-tight text-[var(--color-text)] sm:text-6xl lg:text-7xl">
-              Magical bedtime stories that feel personal, warm, and{" "}
-              <span className="hero-em">a little bit dreamy</span>.
+              Magical bedtime stories that feel personal, warm, and a little bit
+              dreamy.
             </h1>
 
             <p className="hero-reveal hero-delay-2 mt-6 max-w-2xl text-lg leading-8 text-[var(--color-soft)]">
@@ -88,7 +89,7 @@ export default function Home() {
               <div className="hero-preview">
                 <div className="hero-preview__topbar">
                   <span className="hero-preview__pill" />
-                  <span className="font-label text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ink)]/70">
+                  <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/85">
                     TelliTales app preview
                   </span>
                   <span className="hero-preview__pill hero-preview__pill--soft" />
@@ -185,7 +186,7 @@ export default function Home() {
                       {app.storeLabel}
                     </a>
                   ) : (
-                    <span className="rounded-full border border-black/10 bg-[var(--color-ink)] px-4 py-2 text-sm font-semibold text-[var(--color-paper)]">
+                    <span className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-sm font-semibold text-[var(--color-muted)]">
                       {app.storeLabel}
                     </span>
                   )}
